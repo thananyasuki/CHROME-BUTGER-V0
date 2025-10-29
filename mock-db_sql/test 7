@@ -1,0 +1,6 @@
+SELECT
+  date (order_date) as sale_date,
+  SUM(total_price) AS total_revenue
+FROM orfers
+GROUP BY date (order_date)
+ORDER BY sale_date;

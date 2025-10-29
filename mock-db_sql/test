@@ -1,0 +1,4 @@
+select Ingredients.name as ingredient , suppliers.name as suppliers_name
+from ingredients
+JOIN suppliers on ingredients.supplier_id = suppliers.supplier_id
+WHERE suppliers.name = 'Patty' 's Premium Mears';

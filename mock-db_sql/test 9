@@ -1,0 +1,10 @@
+SELECT
+  menu_items,
+  SUM(quantity) AS total_ordered
+FROM
+  items_id
+GROUP BY
+  menu_items
+ORDER BY
+  total_ordered DESC
+LIMIT 1;
